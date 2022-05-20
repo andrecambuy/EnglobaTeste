@@ -1,0 +1,123 @@
+.Main {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.buttons {
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 10%;
+}
+.button-single {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black; /*******/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 15px auto;
+  cursor: pointer;
+  transition: ease-in 0.3s;
+}
+.button-single:hover {
+  background-color: rgb(114, 114, 114);
+}
+
+.button-single > img {
+  margin-bottom: 45px;
+  width: 65px;
+}
+
+/****/
+.grafico {
+  flex-grow: 1.5;
+}
+.titulo {
+  text-align: center;
+}
+.titulo > h3 {
+  margin-bottom: 2px;
+  font-size: 30px;
+  font-weight: 200;
+}
+
+.conteudo {
+  margin: 0 auto;
+  height: 60%;
+}
+
+.grafico-conteudo {
+  margin: auto;
+  width: 75%;
+  height: 100%;
+  margin-top: 20px;
+}
+.descicao-graf {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.descicao-graf > div {
+  display: flex;
+  align-items: center;
+}
+
+.descicao-graf > div > div {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}
+
+.descicao-graf > div > p {
+  margin-right: 25px;
+  display: inline-block;
+}
+
+.blue {
+  background-color: blue;
+}
+.red {
+  background-color: rebeccapurple;
+}
+.yellow {
+  background-color: yellow;
+}
+.green {
+  background-color: green;
+}
+
+.filtro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.filtro > p {
+  margin-right: 20px;
+}
+.filtro > select {
+  margin-right: 15px;
+  border: none;
+  text-align: center;
+  padding: 10px 10px;
+  border: 1px solid #555;
+}
+.filtro > #grafico {
+  padding-right: 250px;
+}
+.filtro > button {
+  border: none;
+  text-align: center;
+  padding: 10px 10px;
+  border: 1px solid #555;
+  background-color: white;
+  transition: ease 0.2s;
+}
+.filtro > button:hover {
+  background-color: blue;
+  color: white;
+}
